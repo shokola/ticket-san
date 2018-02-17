@@ -8,6 +8,15 @@
 
 **GET** /
 
+Parameters
+
+| Key | Value | Required | Default | Description |
+| --- | --- | --- | --- | --- |
+| sort | `updated_at`, `created_at` | | `created_at` | |
+| direction | `asc`, `desc` | | `asc` | | |
+| status | `todo`, `doing`, `done` | | | |
+| assignee | any | | | |
+
 ### チケット新規作成
 
 **GET** /tickets/new
