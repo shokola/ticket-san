@@ -1,24 +1,42 @@
-# README
+# ticket-san
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+- https://gist.github.com/shokola/49218e131a377499d75e59361556553b
 
-Things you may want to cover:
+## WEB APP
 
-* Ruby version
+### チケット一覧
 
-* System dependencies
+**GET** /
 
-* Configuration
+### チケット新規作成
 
-* Database creation
+**GET** /tickets/new
 
-* Database initialization
+### チケット新規作成フォームの送信先
 
-* How to run the test suite
+**POST** /tickets
 
-* Services (job queues, cache servers, search engines, etc.)
+### チケット詳細
 
-* Deployment instructions
+**GET** /tickets/:id
 
-* ...
+### チケット編集
+
+**GET** /tickets/:id/edit
+
+### チケット編集フォームの送信先
+
+**PUT** /tickets/:id
+
+
+## DB
+
+| name | Required | |
+| --- | --- | --- |
+| id | Required | int(11) PRIMARY KEY AUTOINCREMENT |
+| title | Required | varcar(255) |
+| status | Required | varcar(255) |
+| description | | text |
+| assignee | | varcar(255) |
+| updated_at | Required | datetime |
+| created_at | Required | datetime |
