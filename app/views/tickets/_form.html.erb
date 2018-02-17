@@ -18,7 +18,7 @@
 
   <div class="field">
     <%= form.label :status %>
-    <%= form.text_field :status, id: :ticket_status %>
+    <%= form.select :status, [["Todo", "todo"], ["Doing", "doing"], ["Done", "done"]] %>
   </div>
 
   <div class="field">
