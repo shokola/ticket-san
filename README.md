@@ -28,8 +28,7 @@
 
 **PUT** /tickets/:id
 
-
-![画面遷移図](https://raw.githubusercontent.com/shokola/ticket-san/dbdc375f524addcb318397373791bd8a6e6dac35/doc/doc_001.jpg "画面遷移図")
+<img src="https://raw.githubusercontent.com/shokola/ticket-san/dbdc375f524addcb318397373791bd8a6e6dac35/doc/doc_001.jpg" width="300">
 
 ## DB
 
