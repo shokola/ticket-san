@@ -1,10 +1,9 @@
 Rails.application.routes.draw do
-  resources :tickets, only: [:new, :create, :show, :edit, :update] do
-    collection do
-      resources :todo, only: :index
-      resources :doing, only: :index
-      resources :done, only: :index
-    end
+  resources :tickets, only: [:new, :create, :show, :edit, :update]
+  namespace :tickets do
+    resources :todo, only: :index
+    resources :doing, only: :index
+    resources :done, only: :index
   end
 
   root to: 'tickets#index'
